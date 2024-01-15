@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+       <meta charset="UTF-8">
+       <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+       <link rel="stylesheet" href="style.css">
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+       <title>BOOKSKY</title>
+    </head>
+    
+    <body>
+
+        <div class="navbar">
+        <h1>Booksky</h1>
+            <ul>
+                <li style="padding-left:70%">Home |</li>
+                <li>Review |</li>
+                <li>About |</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+
+        <div class="container">
+            <div class="popup">
+            <h2>Rich Dad</h2>
+            <h4>Robert</h4>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam sint veniam nulla odit iusto ducimus repellendus aliquam ab debitis nam. Sunt voluptas expedita delectus tenetur. Quod dolores minima alias veritatis?</p>
+            <button onclick="deletebook(event)">Delete</button>
+            </div>
+        </div>
+
+        <div class="overlay"></div>
+
+        <div class="box">
+            <h1>Add Book</h1>
+            <input placeholder="Book Title" type="text" id="book-title-name">
+            <input placeholder="Book Author" type="text" id="book-author-name">
+            <textarea placeholder="Short Description" id="short-des"></textarea>
+            <button id="addingbook">Add</button>
+            <button id="cancelling">Cancel</button>
+        </div>
+        
+        <div class="Add">
+            <button class="icon" id="addpop">+</button>
+        </div>
+
+        <script src="script.js"></script>
+
+    </body>
+    
+</html>
+ 
+    <!-- <body>
+
+        <style>
+            .overlay{
+            background-color:palevioletred;
+            width:100%;
+            height:100%;
+            position:absolute;
+            top:0px;
+            left:0px;
+            opacity:0.8;
+            z-index:1;
+            display:none;
+            }
+
+            .popup{
+                position:absolute;
+                z-index:2;
+                background-color:white;
+                color:black;
+                width:40%;
+                padding:20px;
+                border-radius:10px; 
+                left:30%;
+                display:none;
+            }
+        </style>
+
+        <button onclick="shows()">Show</button>
+        <div class="overlay"></div>
+        <div class="popup">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis reprehenderit magnam culpa voluptatibus nostrum animi deleniti placeat nihil fugit corrupti eligendi, aut voluptate illo? Modi veritatis animi sint quisquam dolor?</p>
+            <button onclick="notshow()">Close</button>
+        </div>
+
+        <script>
+               var overlays = document.querySelector(".overlay")
+               var popups = document.querySelector(".popup")
+
+               function shows(){
+                overlays.style.display = "block";
+                popups.style.display = "block";
+               }
+
+               function notshow(){
+                overlays.style.display = "none";
+                popups.style.display = "none";
+               }
+
+        </script>
+    </body> -->
+     
+    <!-- <body>
+        <button id="btn">Button</button>
+
+        <script>
+             var button = document.getElementById("btn")
+
+             button.addEventListener("click",function(){
+                alert("hello")
+             })
+
+             button.addEventListener("mouseover",function(){
+                alert("mouse over")
+             })
+        </script>
+    </body> -->
+
+
+
+
+
